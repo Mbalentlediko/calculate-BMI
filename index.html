@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculate-BMI</title>
-</head>
-<body>
-   <script src="./script/code.js"></script> 
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form id="bmiCalculator">
+      <div class="heading">
+        <label for="heading">BMI Calculator for Everyone</label>
+      </div>
+      <div class="choose">
+        <label for="adultorchild" adultorchild>Calculate BMI for</label>
+        <select name="adultorchild" id="adultorchild" personoradult>
+          <option value=""></option>
+          <option value="Adult">Adult</option>
+          <option value="Child">Child</option>
+        </select>
+      </div>
+      <div>
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" />
+        <label for="unitforweight">kg</label>
+      </div>
+      <div class="height">
+        <label for="height"> Height:</label>
+        <input type="text" id="height" name="height" />
+        <label for="unitforheight">cm</label>
+      </div>
+
+      <button type="submit" calculate>Calculate</button>
+      <div class="Status">
+        <label for="status"> Status</label>
+        <input type="text" id="status" BMIstatus />
+      </div>
+    </form>
+    <script src="./script/code.js"></script>
+  </body>
 </html>
